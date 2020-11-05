@@ -1,0 +1,18 @@
+{
+  "name": "Sugar Email Fixer",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Allows for simple copy+paste of email addresses in Sugar.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["contentSettings"],
+  "content_scripts": [
+    {
+      "matches": ["https://crm.pbhs.co/*"],
+      "js": ["src/inject/inject.js"]
+    }
+  ]
+}
