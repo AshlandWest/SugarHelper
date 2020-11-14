@@ -30,6 +30,13 @@ var readyStateCheckInterval = setInterval(function () {
       button.addEventListener("click", (event) => {
         navigator.clipboard.writeText(button.value);
       });
+
+      /* TO DO 
+      Change copyIcon classlist to ("fa", "fa-check-square")
+      After one second, set the classes back to how they were before.
+      NO MORE FOCUS BORDER
+      */
+
       return button;
     }
     emailElements.forEach((element) => {
