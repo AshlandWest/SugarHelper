@@ -1,3 +1,4 @@
+console.log("Sugar Helper Plugin is running on this page");
 //Add needed font for clipboard button to the page
 function addFonts() {
   let node = document.createElement("link");
@@ -16,7 +17,6 @@ var readyStateCheckInterval = setInterval(function () {
 
     // ----------------------------------------------------------
     // This part of the script triggers when page is done loading
-    console.log("Plugin is running");
 
     emailElements.push(
       ...document.querySelectorAll("a[href='javascript:void(0);']")
@@ -32,7 +32,6 @@ var readyStateCheckInterval = setInterval(function () {
       });
       return button;
     }
-    console.log(emailElements);
     emailElements.forEach((element) => {
       element.after("\xa0", makeButton(`${element.innerText}`));
     });
