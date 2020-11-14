@@ -33,7 +33,9 @@ var readyStateCheckInterval = setInterval(function () {
       return button;
     }
     emailElements.forEach((element) => {
-      element.after("\xa0", makeButton(`${element.innerText}`));
+      if (element.innerText) {
+        element.after("\xa0", makeButton(`${element.innerText}`));
+      }
     });
     // ----------------------------------------------------------
   }
