@@ -2,7 +2,9 @@
 
 This is a Google Chrome extension to make life a little easier for PBHS's employees when copying email addresses from Sugar, especially if done in large batches.
 It will add a copy button next to each email address on the page.
-This is helpful because the standard 'copy link' function does not work, requiring precise mouse movement over small text to copy the email without extraneous spaces or missing characters. This can become cumbersome when copying large numbers of email addresses for bulk mailing.
+This is helpful because the standard 'copy link' function does not work, requiring precise mouse movement over small text to copy the email without extraneous spaces or missing characters.
+
+This can become cumbersome when copying large numbers of email addresses for bulk mailing.
 
 ## How to use
 
