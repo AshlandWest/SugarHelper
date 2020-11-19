@@ -9,7 +9,7 @@ This is helpful because the standard 'copy link' function does not work, requiri
 
 - [Enable developer mode and install the plugin](https://developer.chrome.com/extensions/faq#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension%2C%20and%20more.)
   - I am stll deciding if I want to have a packed extention in this repo, but at the very least, you will be able to load it as an un-packed extention as-is.
-- That's it! Login to Sugar account and check it out!
+- That's it! Login to a Sugar account and check it out!
 
 <hr>
 
