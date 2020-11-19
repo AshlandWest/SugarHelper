@@ -21,6 +21,16 @@ var readyStateCheckInterval = setInterval(function () {
     emailElements.push(
       ...document.querySelectorAll("a[href='javascript:void(0);']")
     );
+
+    function userFeedback(target) {
+      target.classList.toggle("fa-copy");
+      target.classList.toggle("fa-check");
+      setTimeout(() => {
+        target.classList.toggle("fa-check");
+        target.classList.toggle("fa-copy");
+      }, 1000);
+    }
+
     function makeButton(emailAddress) {
       let button = document.createElement("button");
       let copyIcon = document.createElement("i");
@@ -29,14 +39,9 @@ var readyStateCheckInterval = setInterval(function () {
       button.value = emailAddress;
       button.addEventListener("click", (event) => {
         navigator.clipboard.writeText(button.value);
+        userFeedback(copyIcon);
       });
-
-      /* TO DO 
-      Change copyIcon classlist to ("fa", "fa-check-square")
-      After one second, set the classes back to how they were before.
-      NO MORE FOCUS BORDER
-      */
-
+      button.style.outline = "none";
       return button;
     }
     emailElements.forEach((element) => {
